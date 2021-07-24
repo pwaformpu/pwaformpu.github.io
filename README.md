@@ -1,1 +1,1 @@
-This project is PWA for Moscow Polytech University.
+This project is PWA for Moscow Polytech University by Danila Egorenko.
