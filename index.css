@@ -54,7 +54,7 @@ button {
 .imgContainerPWA {
 	height: 60px;
 	width: 60px;
-	padding: 50px;
+	padding: 5px;
 	background-image: url(img/icon.png);
 	background-repeat: no-repeat;
 	background-size: 70%;
