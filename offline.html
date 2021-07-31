@@ -38,6 +38,7 @@
         }
 
         .animated {
+            height: 60%;
             width: 100%;
         }
     </style>
@@ -779,19 +780,6 @@
         window.addEventListener('online', () => {
             window.location.href = "/"
         });
-    /*    async function checkNetworkAndReload() {
-                try {
-                    const response = await fetch('.');
-                    if (response.status >= 200 && response.status < 500) {
-                        window.location.reload();
-                        return;
-                    }
-                } catch {
-                }
-                window.setTimeout(checkNetworkAndReload, 2500);
-            }
-    
-            checkNetworkAndReload(); */
     </script>
 </body>
 
