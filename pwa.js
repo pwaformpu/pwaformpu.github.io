@@ -2,7 +2,7 @@ let deferredPrompt;
 
 window.addEventListener('beforeinstallprompt', (e) => {
     e.preventDefault();
-    if (sessionStorage.getItem('hidePWA')) document.querySelector(".install").style.display = "flex";
+    if (!sessionStorage.getItem('hidePWA')) document.querySelector(".install").style.display = "flex";
     deferredPrompt = e;
     setTimeout(() => document.querySelector(".install").classList.add("disp"), 100);
 
@@ -13,12 +13,12 @@ window.addEventListener('beforeinstallprompt', (e) => {
         deferredPrompt = null;
     });
     document.querySelector("#continuePWA").addEventListener('click', async () => {
-        sessionStorage.setItem('hidePWA', 'true');
+        sessionStorage.setItem('hidePWA', true);
         hideUI();
     });
     document.onclick = function (e) {
         if (!e.target.classList.contains("install")) {
-            sessionStorage.setItem('hidePWA', 'true');
+            sessionStorage.setItem('hidePWA', true);
             hideUI();
         }
     }
