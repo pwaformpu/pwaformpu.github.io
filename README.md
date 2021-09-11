@@ -3,5 +3,5 @@
 <p>To add PWA add these lines to tag <strong>head</strong>:</p>
 <pre>
 <script src="pwa.js"></script>
-<link rel="stylesheet" href="pwa.css">
+// <link rel="stylesheet" href="pwa.css">
 </pre>
