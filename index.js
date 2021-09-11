@@ -25,6 +25,16 @@ window.addEventListener('beforeinstallprompt', (e) => {
     };
 });
 window.addEventListener("load", () => {
+    document.head.innerHTML += `<link rel="manifest" href="index.webmanifest">
+    <meta name="theme-color" content="#1e1e1e">`;
+    document.body.innerHTML += `<div class="install">
+    <div class="imgContainerPWA"></div>
+    <div class="contain">
+        <button id="continuePWA">Не сейчас</button>
+        <button id="installPWA">Установить</button>
+    </div>
+</div>`;
+    
     if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("service-worker.js");
     }
