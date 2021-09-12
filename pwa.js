@@ -37,6 +37,9 @@ window.addEventListener("load", () => {
     </div>
 </div>`;
     document.head.innerHTML += `<style>
+    body {
+        overflow: hidden;
+    }
     .install {
         position: absolute;
         bottom: 0;
@@ -109,7 +112,7 @@ window.addEventListener("load", () => {
         top: -10px;
     }
     </style>`;
-    
+
     if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("service-worker.js");
     }
@@ -117,5 +120,6 @@ window.addEventListener("load", () => {
 
 function hideUI() {
     document.querySelector(".install").classList.remove("disp");
+    document.querySelector("body").style.overflow = "auto";
     setTimeout(() => document.querySelector(".install").style.display = "none", 300);
 }
