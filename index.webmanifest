@@ -5,6 +5,44 @@
     "display": "standalone",
     "background_color": "#4b6eb9",
     "description": "Приложение МПУ",
+    "shortcuts": [
+        {
+            "name": "Личный кабинет",
+            "short_name": "ЛК",
+            "description": "ЛК студента",
+            "url": "e.mospolytech.ru",
+            "icons": [
+                {
+                    "src": "img/windows10/Square150x150Logo.scale-100.png",
+                    "sizes": "150x150"
+                }
+            ]
+        },
+        {
+            "name": "Расписание",
+            "short_name": "Расп.",
+            "description": "Расписание для группы",
+            "url": "https://e.mospolytech.ru/?p=rasp",
+            "icons": [
+                {
+                    "src": "img/windows10/Square150x150Logo.scale-100.png",
+                    "sizes": "150x150"
+                }
+            ]
+        },
+        {
+            "name": "Новости",
+            "short_name": "Нов.",
+            "description": "Новости Политеха",
+            "url": "/news",
+            "icons": [
+                {
+                    "src": "img/windows10/Square150x150Logo.scale-100.png",
+                    "sizes": "150x150"
+                }
+            ]
+        }
+    ],
     "icons": [
         {
             "src": "img/windows10/SmallTile.scale-100.png",
